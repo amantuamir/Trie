@@ -1,3 +1,5 @@
+///**Bismillahir Rahmanir Rahim.**
+///Amantu Amir, University of Barishal, Bangladesh
 #include <bits/stdc++.h>
 using namespace std;
 
