@@ -1,5 +1,6 @@
 ///**Bismillahir Rahmanir Rahim.**
 ///Amantu Amir, University of Barishal, Bangladesh
+///Accepted
 #include <bits/stdc++.h>
 #define clr(a, v)             memset(a, v, sizeof a)
 #define all(v)                v.begin(), v.end()
@@ -97,14 +98,12 @@ void Insert(string s){
 }
 
 void dfs(node *cur){
-    if(cur != NULL){
-        if(cur->endmark > -1){
-            P(dic[cur->endmark]); nl;
-        }
-        rep(i, 0, 26){
-            if(cur->child[i] != NULL){
-                dfs(cur->child[i]);
-            }
+    if(cur->endmark > -1){
+        P(dic[cur->endmark]); nl;
+    }
+    rep(i, 0, 26){
+        if(cur->child[i] != NULL){
+            dfs(cur->child[i]);
         }
     }
 }
